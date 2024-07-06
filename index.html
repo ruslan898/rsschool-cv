@@ -3,9 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+<title>CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+<link rel="icon" href="assets/img/favicon.ico">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <span><a href="#contacts" class="menu-link">Contacts</a></span>
+                        </li>
+                        <li class="menu-item">
+                            <span><a href="#summary" class="menu-link">Summary</a></span>
+                        </li>
+                        <li class="menu-item">
+                            <span><a href="#skills" class="menu-link">Skills</a></span>
+                        </li>
+                        <li class="menu-item">
+                            <span><a href="#code-example" class="menu-link">Code Example</a></span> 
+                        </li>
+                        <li class="menu-item">
+                            <span>
+                                <a href="#education" class="menu-link">Education</a>
+                            </span>  
+                        </li>
+                        <li class="menu-item">
+                            <span><a href="#english" class="menu-link">English</a></span>    
+                        </li>
+                        <li class="menu-item">
+                            <span><a href="#projects" class="menu-link">Projects</a></span>    
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <section class="name" id="#name">
+            <div class="container">
+                <div class="name-wrapper">
+                    <img src="assets/img/avatar.jpg" alt="avatar">
+                    <h1 class="title">Ruslan Abibullaev</h1>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="info">
+            <div class="container">
+                <div class="info-wrapper">
+                    <div class="info-block" id="contacts">
+                        <h2 class="title-h2">Contacts</h2>
+                        <ul class="info-list">
+                            <li>Location: Samarkand, Uzbekistan</li>
+                            <li>Discord: <a href="https://discord.gg/zUr7wWYPXE">ruslan898</a></li>
+                            <li>Email: <a href="mailto:ruslan_abibullaev@mail.ru">ruslan_abibullaev@mail.ru</a></li>
+                            <li>GitHub: <a href="https://github.com/ruslan898/">ruslan898</a></li>
+                            <li>Telegram: <a href="https://t.me/Ruslan41k123">@Ruslan41k123</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-block" id="summary">
+                        <h2 class="title-h2">Summary</h2>
+                        <p class="summary">I am a responsible and reliable person who likes to develop new skills and gain new knowledge in
+                            new areas. I am also
+                            willing to work in a team with other people in order to exchange knowledge and resolve difficult challenges
+                            together.</p>
+                    </div>
+                    
+                    <div class="info-block" id="skills">
+                        <h2 class="title-h2">Skills</h2>
+                        <ul class="info-list">
+                            <li>HTML</li>
+                            <li>CSS/SASS</li>
+                            <li>JavaScript (Basic)</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-block" id="code-example">
+                        <h2 class="title-h2">Code Example</h2>
+                        <pre>
+<code>
+function squareDigits(num) { 
+    const str = String(num); 
+    let result = ''; 
+    for (let i = 0; i &lt; str.length; i++) {  
+        result +=str[i] ** 2;
+    } 
+    return +result; 
+}
+</code>
+                        </pre>
+                    </div>
+                    
+                    <div class="info-block" id="education">
+                        <h2 class="title-h2">Education</h2>
+                        <ul class="info-list">
+                            <li><span>University:</span> “Silk Road” International University of Tourism and Cultural Heritage</li>
+                            <li><span>Courses:</span>
+                                <ul>
+                                    <li><a href="https://beonmax.com/" class="course-link">beONmax</a></li>
+                                    <li><a href="https://www.udacity.com/" class="course-link">Udacity</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-block" id="english">
+                        <h2 class="title-h2">English</h2>
+                        <div>A2</div>
+                    </div>
+                    
+                    <div class="info-block" id="projects">
+                        <h2 class="title-h2">Projects</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="author">
+                        <div class="year">© 2024</div>
+                        <a href="https://github.com/ruslan898/" class="github-link">ruslan898</a>
+                    </div>
+                    <a href="https://rs.school/courses/javascript-ru" class="course-logo">
+                        <img src="assets/img/logo-rsschool.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="index.js"></script>
 </body>
 </html>

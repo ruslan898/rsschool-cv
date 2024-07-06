@@ -1,5 +1,273 @@
+:root {
+    --main-color: rgb(37, 123, 197);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+}
+
+span {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1440px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.header-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+}
+
+.menu-item {
+    padding: 0 15px;
+    list-style-type: none; 
+    border-right: 1px solid #fff;
+}
+
+.menu-item span {
+    display: block;
+    transition: 0.5s all;
+}
+
+.menu-item span:hover {
+    transform: scale(1.1);
+    
+}
+.menu-item span:hover .menu__link{
+    color: rgb(212, 212, 212);
+}
+
+.menu-item:last-child {
+    border: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu-link:hover {
+    color: #ccc9c9;
+}
+
+.hamburger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    width: 25px;
+    height: 12px;
+    display: none;
+}
+
+.hamburger span {
+    transition: 0.3s all;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.name-wrapper {
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-wrapper img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-right: 50px;
+}
+
+.title {
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.divider {
+    width: 80%;
+    height: 5px;
+    background-color: var(--main-color);
+    margin: 0 auto;
+    border: none;
+}
+
+.info-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info-block {
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--main-color);
+    width: 45%;
+}
+
+.title-h2 {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.info-list li {
+    margin-bottom: 15px;
+}
+
+.info-list ul {
+    padding: 10px 25px;
+}
+
+.summary {
+    line-height: 1.5em;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+}
+
+.footer-wrapper {
+    margin: 0 auto; 
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.github-link {
+    color: #fff;
+    transition: 0.5s all;
+}
+
+.github-link:hover {
+    color: #ccc9c9;
+}
+
+.course-logo img {
+    width: 50px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .info-wrapper {
+        justify-content: center;
+    }
+
+    .info-block {
+        width: 80%;
+    }
+
+    .menu-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+        transition: 0.5s all;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .menu-list-active {
+        left: 0;
+    }
+
+    .menu-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 40px;
+        font-size: 20px;
+        margin: 10px 0;
+        padding: 0;
+        border-right: none;
+        border-bottom: 1px solid #fff;
+    }    
+    
+    .menu-item::after {
+        content: none;
+    }
+    
+    .menu-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 25px;
+    }
+
+    .hamburger-active span {
+        margin: -3px;
+    }
+
+    .hamburger-active span:first-child {
+        transform: translateY(10px) rotate(-45deg);
+    }
+
+    .hamburger-active span:nth-child(2) {
+        display: none;
+    }
+
+    .hamburger-active span:nth-child(3) {
+        transform: translateY(10px) rotate(45deg);
+    }
 }
