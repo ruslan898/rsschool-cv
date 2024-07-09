@@ -21,6 +21,10 @@ span {
     font-weight: bold;
 }
 
+ul li {
+    line-height: 1.5em;
+}
+
 .container {
     max-width: 1440px;
     width: 80%;
